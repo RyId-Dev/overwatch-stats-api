@@ -1,0 +1,85 @@
+{
+    "widowmaker": [
+        {
+            "category": "hero_specific",
+            "label": "Hero Specific",
+            "stats": [
+                {
+                    "key": "venom_mine_kills",
+                    "label": "Venom Mine Kills",
+                    "value": 1360
+                },
+                {
+                    "key": "scoped_critical_hits",
+                    "label": "Scoped Critical Hits",
+                    "value": 11238
+                },
+                {
+                    "key": "scoped_critical_hits_most_in_game",
+                    "label": "Scoped Critical Hits - Most in Game",
+                    "value": 30
+                },
+                {
+                    "key": "venom_mine_kills_most_in_game",
+                    "label": "Venom Mine Kills - Most in Game",
+                    "value": 5
+                },
+                {
+                    "key": "scoped_accuracy_best_in_game",
+                    "label": "Scoped Accuracy - Best in Game",
+                    "value": 100
+                },
+                {
+                    "key": "scoped_critical_hit_kills",
+                    "label": "Scoped Critical Hit Kills",
+                    "value": 3945
+                },
+                {
+                    "key": "scoped_critical_hits_most_in_game",
+                    "label": "Scoped Critical Hits - Most in Game",
+                    "value": 22
+                },
+                {
+                    "key": "long_range_final_blows",
+                    "label": "Long Range Final Blows",
+                    "value": 2574
+                },
+                {
+                    "key": "long_range_final_blows_most_in_game",
+                    "label": "Long Range Final Blows - Most in Game",
+                    "value": 18
+                },
+                {
+                    "key": "scoped_critical_hits_avg_per_10_min",
+                    "label": "Scoped Critical Hits - Avg per 10 Min",
+                    "value": 8.99
+                },
+                {
+                    "key": "venom_mine_kills_avg_per_10_min",
+                    "label": "Venom Mine Kills - Avg per 10 Min",
+                    "value": 1.09
+                },
+                {
+                    "key": "long_range_final_blows_avg_per_10_min",
+                    "label": "Long Range Final Blows - Avg per 10 Min",
+                    "value": 6.95
+                },
+                {
+                    "key": "scoped_critical_hit_kills_avg_per_10_min",
+                    "label": "Scoped Critical Hit Kills - Avg per 10 Min",
+                    "value": 3.16
+                },
+                {
+                    "key": "scoped_critical_hit_accuracy",
+                    "label": "Scoped Critical Hit Accuracy",
+                    "value": 21
+                },
+                {
+                    "key": "scoped_accuracy",
+                    "label": "Scoped Accuracy",
+                    "value": 47
+                }
+            ]
+        }
+    ]
+}
