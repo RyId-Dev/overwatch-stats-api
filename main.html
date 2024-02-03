@@ -12,10 +12,9 @@
             <ul></ul>
 
             <script>
-                fetch("./data.json")
+                fetch("./data2.json")
                     .then(res => {
                         return res.json();
-                        
                     })
                      .then(data => {
                         (data.widowmaker[0].stats).forEach(info => {
@@ -29,7 +28,7 @@
             </script>
 
         </div>
-    </body>
+    </body> 
 
 
 </html>
