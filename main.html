@@ -2,6 +2,7 @@
 <html lang="en">
     <head> 
         <title></title>
+        <script src="./load_copy.js"></script>
     </head>
 
     <body>
@@ -54,25 +55,9 @@
                 </tbody>
             </table>
 
-            <script>
-                fetch("./data2.json")
-                    .then(res => {
-                        return res.json();
-                    })
-                     .then(data => {
-                        (data.widowmaker[0].stats).forEach(info => {
-                          const markup = `<li>${info.label}${info.value}</li>`
-                        console.log(data.widowmaker[0].stats);
-                          document.querySelector('ul').insertAdjacentHTML('beforeend', markup)
-                        })
-                    })
-                    .catch(error => console.log(error));
-
-            </script>
-
         </div>
     </body> 
-
+    
 
 </html>
 

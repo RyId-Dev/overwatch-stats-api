@@ -1,11 +1,12 @@
 const ul = document.getElementById('apidata');
 const list = document.createDocumentFragment();
 
-function loadDetails () {
+//function loadDetails () {
 
-    userID = document.getElementById("userSearch").value;
+    //userID = document.getElementById("userSearch").value;
+    userID = "Raxey-21971";
     //debugger
-    url = 'https://overfast-api.tekrop.fr/players/' + userID + '/summary';
+    url = 'https://overfast-api.tekrop.fr/players/Raxey-21971/summary';
 
     fetch(url)
     .then(response => response.json())
@@ -21,9 +22,9 @@ function loadDetails () {
 
         });
 
-    }
+//    }
 
-document.getElementById("submit").addEventListener("click", loadDetails);
+//document.getElementById("submit").addEventListener("click", loadDetails);
 
 
 
