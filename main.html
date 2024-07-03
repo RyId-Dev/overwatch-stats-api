@@ -7,9 +7,52 @@
     <body>
         <div class = main>
             <h1>Overfast API Test</h1>  
-            <h2>Player Information Displays Here</h2>
+            <form>
+                <input type="search" id="userSearch" placeholder="Enter User ID Here"><br>
+            </form>
+            <button id="submit">Submit</button>
 
-            <ul></ul>
+            <table id="infoTable">
+                <thead>
+                    <tr>
+                        <th>Heading</th>
+                        <th>Info</th>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td id="usernameInfo"></td>
+                    </tr>
+                    <tr>
+                        <td>Title</td>
+                        <td id="title"></td>
+                    </tr>
+                    <tr>
+                        <td>Endorsement Level</td>
+                        <td id="endorsement"></td>
+                    </tr>
+                    <tr>
+                        <td>Endorsement Frame</td>
+                        <td>
+                            <img id="endFrame">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Avatar</td>
+                        <td>
+                            <img id="avatar"></img>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Namecard</td>
+                        <td>
+                            <img id="namecard"></img>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
 
             <script>
                 fetch("./data2.json")
