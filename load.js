@@ -1,17 +1,15 @@
 const ul = document.getElementById('apidata');
 const list = document.createDocumentFragment();
 
-//function loadDetails () {
+function loadDetails () {
 
-    //userID = document.getElementById("userSearch").value;
-    userID = "Raxey-21971";
-    //debugger
-    url = 'https://overfast-api.tekrop.fr/players/Raxey-21971/summary';
+    userID = document.getElementById("userSearch").value;
+    //userID = "Raxey-21971";
+    url = 'https://overfast-api.tekrop.fr/players/'+ userID +'/summary';
 
     fetch(url)
     .then(response => response.json())
     .then((data) => {
-        //let apidata = data;
         console.log(data);
         document.getElementById("usernameInfo").innerHTML = data.username;
         document.getElementById("title").innerHTML = data.title;
@@ -22,9 +20,10 @@ const list = document.createDocumentFragment();
 
         });
 
-//    }
-
-//document.getElementById("submit").addEventListener("click", loadDetails);
+    }
+window.addEventListener("DOMContentLoaded", (event) => {
+    document.getElementById("submit").addEventListener("click", loadDetails);
+});
 
 
 
