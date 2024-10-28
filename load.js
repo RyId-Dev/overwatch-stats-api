@@ -12,7 +12,7 @@ function loadDetails () {
     .then(response => response.json())
     .then((data) => {
         
-        document.getElementById("usernameInfo").innerHTML = data.username;
+        //document.getElementById("usernameInfo").innerHTML = data.username;
         document.getElementById("title").innerHTML = data.title;
         //document.getElementById("endorsement").innerHTML = data.endorsement.level;
         document.getElementById("endFrame").src = data.endorsement.frame;
