@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <title></title>
-        <script src="./load.js"></script>
-    </head>
-
-    <body>
-        <div class = main>
-            <h1>Overfast API Test</h1>  
-            <form>
-                <input type="search" id="userSearch" placeholder="Enter User ID Here">
-            </form>
-            <button id="submit">Submit</button>
-
-            <table id="infoTable">
-                <thead>
-                    <tr>
-                        <th>Heading</th>
-                        <th>Info</th>
-                    </tr>
-                    <tr>
-                        <td>Username</td>
-                        <td id="usernameInfo"></td>
-                    </tr>
-                    <tr>
-                        <td>Title</td>
-                        <td id="title"></td>
-                    </tr>
-                    <tr>
-                        <td>Endorsement Level</td>
-                        <td id="endorsement"></td>
-                    </tr>
-                    <tr>
-                        <td>Endorsement Frame</td>
-                        <td>
-                            <img id="endFrame">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Avatar</td>
-                        <td>
-                            <img id="avatar"></img>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Namecard</td>
-                        <td>
-                            <img id="namecard"></img>
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overfast API Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Overfast API Test</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="userSearch" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="userSearch" placeholder="Enter username">
+                        </div>
+                        <button id="submit" class="btn btn-primary w-100">Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body> 
-    
-
+        <div style="display:none" id="infoload" class="row mt-4 justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Player Summary</h2>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img id="avatar" src="" alt="Avatar" class="img-fluid rounded-circle mb-2">
+                                <p><strong><span id="usernameInfo"></span></strong></p>
+                            </div>                           
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-8">
+                                <p><strong><span id="title"></span></strong></p>
+                            </div>
+                            <div class="col-md-6">
+                                <img id="namecard" src="" alt="Namecard" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-8">
+                                <p><strong><span id="endorsement"></span></strong></p>
+                            </div>
+                            <div class="col-md-6">
+                                <img id="endFrame" src="" alt="Endorsement Frame" class="img-fluid">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="load.js"></script>
+</body>
 </html>
-
